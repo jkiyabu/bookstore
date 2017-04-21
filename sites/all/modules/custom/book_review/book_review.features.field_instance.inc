@@ -51,7 +51,7 @@ function book_review_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 4,
     ),
   );
 
@@ -91,7 +91,7 @@ function book_review_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -3,
+      'weight' => 2,
     ),
   );
 
@@ -131,7 +131,7 @@ function book_review_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -1,
+      'weight' => 1,
     ),
   );
 
@@ -168,7 +168,7 @@ function book_review_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 0,
+      'weight' => 3,
     ),
   );
 

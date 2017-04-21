@@ -21,7 +21,7 @@ function book_review_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_book_review';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['comment_book_review'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -108,7 +108,7 @@ function book_review_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
@@ -120,9 +120,7 @@ function book_review_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_book_review';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_book_review'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -153,7 +151,7 @@ function book_review_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_book_review';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_book_review'] = $strongarm;
 
   return $export;
